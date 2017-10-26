@@ -6,7 +6,7 @@ server:
   port: 8765
   
 feign:
-  hystrix:
+  hystrix: 
     enabled: true
     
 spring:

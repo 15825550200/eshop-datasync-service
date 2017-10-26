@@ -89,7 +89,6 @@ public class DataChangeQueueReceiver {
 	private void processBrandDataChangeMessage(JSONObject messageJSONObject) {
 		Long id = messageJSONObject.getLong("id"); 
     	String eventType = messageJSONObject.getString("event_type"); 
-    	
     	if("add".equals(eventType) || "update".equals(eventType)) { 
     		brandDataChangeMessageList.add(messageJSONObject);
     		System.out.println("【将品牌数据放入内存list中】,list.size="+brandDataChangeMessageList.size());
